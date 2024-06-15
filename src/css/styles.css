@@ -26,9 +26,24 @@
 
 /*Timer*/
 
+h1 {
+  padding-top: 10px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #9e2edf;
+  text-decoration: underline;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
 }
 
 #datetime-picker {
@@ -75,4 +90,54 @@ button[data-start]:disabled {
 .label {
   font-size: 16px;
   color: #3d4349;
+}
+
+/* Snackbar */
+
+section {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+form input[type="number"] {
+  width: 325px;
+  height: 40px;
+}
+
+fieldset {
+  width: 306px;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+legend {
+  font-size: 1.2em;
+}
+
+button[type="submit"] {
+  width: 333px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }
