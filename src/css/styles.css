@@ -27,23 +27,33 @@
 /*Timer*/
 
 h1 {
-  padding-top: 10px;
+  letter-spacing: 0.02em;
+  font-size: 2em;
 }
 
 a {
-  color: #000000;
   text-decoration: none;
-  transition: color 0.3s ease;
+  color: #007bff;
+  transition: color 0.3s;
+  letter-spacing: 0.1em;
+
 }
 
 a:hover {
-  color: #9e2edf;
-  text-decoration: underline;
+  color: #0056b3;
+}
+
+a:active {
+  color: #003366;
+
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.25em;
 }
 
 #datetime-picker {
@@ -55,20 +65,36 @@ body {
   width: 250px;
 }
 
+#datetime-picker:hover {
+  border: 1px solid #000000;
+}
+
+#datetime-picker:active {
+  border: 1px solid #340ce3;
+}
+
+#datetime-picker:disabled {
+  background-color: 1px solid #c2c1c5;
+}
+
 button[data-start] {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
   border-radius: 4px;
-  background-color: #28a745;
+  background: rgba(78, 117, 255, 1);
   color: white;
   cursor: pointer;
   margin-bottom: 20px;
 }
 
 button[data-start]:disabled {
-  background-color: #6c757d;
+  background: rgba(207, 207, 207, 1);
   cursor: not-allowed;
+}
+
+button[data-start]:hover {
+  background: rgba(108, 140, 255, 1);
 }
 
 .timer {
@@ -94,15 +120,6 @@ button[data-start]:disabled {
 
 /* Snackbar */
 
-section {
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
 .form {
   display: flex;
   flex-direction: column;
@@ -110,17 +127,25 @@ h1 {
   gap: 10px;
 }
 
-form input[type="number"] {
-  width: 325px;
+form input[type="number"],
+fieldset,
+button[type="submit"] {
+  width: 360px;
   height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 fieldset {
-  width: 306px;
-  height: 40px;
   border: 1px solid #ccc;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 1px;
+  width: 344px;
+  height: 64px;
 }
 
 legend {
@@ -128,16 +153,16 @@ legend {
 }
 
 button[type="submit"] {
-  width: 333px;
+  width: 370px;
   padding: 10px 20px;
-  font-size: 1.2em;
   border: none;
-  border-radius: 5px;
-  background-color: #007bff;
+  border-radius: 8px;
+  background: rgba(78, 117, 255, 1);
   color: white;
   cursor: pointer;
+  text-align: center;
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background: rgba(108, 140, 255, 1);
 }
